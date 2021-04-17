@@ -1,6 +1,6 @@
 [package]
-name = "du-rs"
-version = "0.1.0"
+name = "du_rs"
+version = "0.2.0"
 authors = ["kautionb <kaution3@pm.me>"]
 edition = "2018"
 
@@ -9,3 +9,4 @@ edition = "2018"
 [dependencies]
 clap = { git = "https://github.com/clap-rs/clap/" }
 humansize = "1.1.0"
+tokio = { version = "1.5.0", features = ["full"] } # Was 1.0.0

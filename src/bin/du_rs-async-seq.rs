@@ -1,28 +1,14 @@
-use clap::{Clap, crate_version, crate_authors};
+use clap::Clap;
 use humansize::{self, FileSize, file_size_opts};
 use std::{
 	error::Error,
 	io,
-	path::{Path, PathBuf},
+	path::PathBuf,
 	env,
 	fs
 };
 
-#[derive(Clap)]
-#[clap(version = crate_version!(), author = crate_authors!())]
-struct Opts {
-	/// Directory to start from (default = current directory)
-	pub dir: Option<PathBuf>,
-	#[clap(short, long )]
-	//// Show size in a human-reable way
-	pub human_readable: bool,
-	#[clap(short, long )]
-	/// Produce a summary for the directory
-	pub summarize: bool,
-	#[clap(short = 'l', long)]
-	/// Count sizes many times if hard links
-	pub count_links: bool,
-}
+use du_rs::Opts;
 
 fn main() -> Result<(), Box<dyn Error>> {
 	let opts = Opts::parse();
