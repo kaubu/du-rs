@@ -10,3 +10,5 @@ edition = "2018"
 clap = { git = "https://github.com/clap-rs/clap/" }
 humansize = "1.1.0"
 tokio = { version = "1.5.0", features = ["full"] } # Was 1.0.0
+tokio-stream = { version = "0.1.5", features = ["fs"] }
+futures = "0.3.14"
