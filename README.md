@@ -6,7 +6,7 @@ Here are the commands for version 0.3.0:
 me@mypc:~/Downloads$ ./du-rs-sync-linux64 --help
 du-rs 0.3.0
 
-kautionb <kaution3@pm.me>
+https://github.com/kaubu
 
 USAGE:
     du-rs-sync-linux64 [FLAGS] [dir]
